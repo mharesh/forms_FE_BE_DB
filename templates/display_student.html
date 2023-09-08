@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Students DATA</h1>
+        <table border="1px" width="50%">
+            <tr>
+                <th>Sid</th>
+                <th>Sname</th>
+                <th>ScName</th>
+            </tr>
+
+            {% for s in QSTO %}
+                <tr>
+                    <td>{{s.Sid}}</td>
+                    <td>{{s.Sname}}</td>
+                    <td>{{s.ScName}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

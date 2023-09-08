@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>Insert data to school model</h2>
+
+
+        <form method="POST">
+            {% csrf_token %}
+            <label for="SCN">ScName</label>
+            <input type="text" name="SCN" id="SCN"><br><br>
+
+            <label for="SCP">ScPrincipal</label>
+            <input type="text" name="SCP" id="SCP"><br><br>
+
+
+            <label for="SCL">ScLocation</label>
+            <input type="text" name="SCL" id="SCL"><br><br>
+
+            <input type="submit" value="Insert_School">
+
+        </form>
+    </center>
+</body>
+</html>
